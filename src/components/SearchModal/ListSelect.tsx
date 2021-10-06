@@ -2,7 +2,7 @@ import React, { memo, useCallback, useMemo, useRef, useState } from 'react'
 import { ArrowLeft } from 'react-feather'
 import { usePopper } from 'react-popper'
 import { useDispatch, useSelector } from 'react-redux'
-import { Button, Text, ChevronDownIcon, CloseIcon } from 'moonwalkerswap-uikit'
+import { Button, Text, ChevronDownIcon, CloseIcon } from 'polygon-moonwalkerswap-uikit'
 import styled from 'styled-components'
 import useI18n from 'hooks/useI18n'
 import { useFetchListCallback } from '../../hooks/useFetchListCallback'
@@ -288,7 +288,7 @@ export function ListSelect({ onDismiss, onBack }: { onDismiss: () => void; onBac
           <QuestionHelper
             text={TranslateString(
               999,
-              'Token lists are an open specification for lists of BEP20 tokens. You can use any token list by entering its URL below. Beware that third party token lists can contain fake or malicious BEP20 tokens.'
+              'Token lists are an open specification for lists of ERC20 tokens. You can use any token list by entering its URL below. Beware that third party token lists can contain fake or malicious ERC20 tokens.'
             )}
           />
         </Text>

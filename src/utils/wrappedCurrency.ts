@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, ETHER, Token, TokenAmount, WETH } from 'moonwalkerswap-sdk-v2'
+import { ChainId, Currency, CurrencyAmount, ETHER, Token, TokenAmount, WETH } from 'polygon-moonwalkerswap-sdk'
 
 export function wrappedCurrency(currency: Currency | undefined, chainId: ChainId | undefined): Token | undefined {
   // eslint-disable-next-line no-nested-ternary

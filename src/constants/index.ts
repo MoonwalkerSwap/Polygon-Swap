@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent, Token, WETH } from 'moonwalkerswap-sdk-v2'
+import { ChainId, JSBI, Percent, Token, WETH } from 'polygon-moonwalkerswap-sdk'
 
 export const ROUTER_ADDRESS = '0x87350df5a4b0395d2d743c5402c19f819e74ddca'
 
@@ -7,27 +7,26 @@ type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
-export const DAI = new Token(ChainId.MAINNET, '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', 18, 'DAI', 'Dai Stablecoin')
-export const BUSD = new Token(ChainId.MAINNET, '0xe9e7cea3dedca5984780bafc599bd69add087d56', 18, 'BUSD', 'Binance USD')
-export const USDT = new Token(ChainId.MAINNET, '0x55d398326f99059ff775485246999027b3197955', 18, 'USDT', 'Tether USD')
+export const DAI = new Token(ChainId.MAINNET, '0x8f3cf7ad23cd3cadbd9735aff958023239c6a063', 18, 'DAI', 'Dai Stablecoin')
+export const BUSD = new Token(ChainId.MAINNET, '0xdab529f40e671a1d4bf91361c21bf9f0c9712ab7', 18, 'BUSD', 'Binance USD')
+export const USDT = new Token(ChainId.MAINNET, '0xc2132d05d31c914a87c6611c10748aeb04b58e8f', 18, 'USDT', 'Tether USD')
 export const UST = new Token(
   ChainId.MAINNET,
-  '0x23396cf899ca06c4472205fc903bdb4de249d6fc',
+  '0xc2132d05d31c914a87c6611c10748aeb04b58e8f',
   18,
   'UST',
   'Wrapped UST Token'
 )
 export const ETH = new Token(
   ChainId.MAINNET,
-  '0x2170ed0880ac9a755fd29b2688956bd959f933f8',
+  '0x7ceb23fd6bc0add59e62ac25578270cff1b9f619',
   18,
   'ETH',
-  'Binance-Peg Ethereum Token'
+  'Wrapped Ethereum Token'
 )
 
 const WETH_ONLY: ChainTokenList = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
-  [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]],
 }
 
 // used to construct intermediary pairs for trading
@@ -59,8 +58,8 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
     [
-      new Token(ChainId.MAINNET, '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82', 18, 'CAKE', 'PancakeSwap Token'),
-      new Token(ChainId.MAINNET, '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', 18, 'WBNB', 'Wrapped BNB'),
+      new Token(ChainId.MAINNET, '0x5ce9680bddc91d955a51b959f5cabaf466b0be5a', 18, 'PDUST', 'MoonwalkerSwap LP Token'),
+      new Token(ChainId.MAINNET, '0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270', 18, 'WMATIC', 'Wrapped MATIC'),
     ],
     [BUSD, USDT],
     [DAI, USDT],

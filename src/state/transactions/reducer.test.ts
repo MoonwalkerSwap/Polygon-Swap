@@ -1,4 +1,4 @@
-import { ChainId } from 'moonwalkerswap-sdk-v2'
+import { ChainId } from 'polygon-moonwalkerswap-sdk'
 import { createStore, Store } from 'redux'
 import { addTransaction, checkedTransaction, clearAllTransactions, finalizeTransaction } from './actions'
 import reducer, { initialState, TransactionState } from './reducer'

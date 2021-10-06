@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { AddressZero } from '@ethersproject/constants'
-import { TokenAmount, Token, ChainId, Percent, JSBI } from 'moonwalkerswap-sdk-v2'
+import { TokenAmount, Token, ChainId, Percent, JSBI } from 'polygon-moonwalkerswap-sdk'
 
 import {
   getBscScanLink,
@@ -14,22 +14,22 @@ import {
 describe('utils', () => {
   describe('#getEtherscanLink', () => {
     it('correct for tx', () => {
-      expect(getBscScanLink(1, 'abc', 'transaction')).toEqual('https://bscscan.com/tx/abc')
+      expect(getBscScanLink(1, 'abc', 'transaction')).toEqual('https://polygonscan.com/tx/abc')
     })
     it('correct for token', () => {
-      expect(getBscScanLink(1, 'abc', 'token')).toEqual('https://bscscan.com/token/abc')
+      expect(getBscScanLink(1, 'abc', 'token')).toEqual('https://polygonscan.com/token/abc')
     })
     it('correct for address', () => {
-      expect(getBscScanLink(1, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
+      expect(getBscScanLink(1, 'abc', 'address')).toEqual('https://polygonscan.com/address/abc')
     })
     it('unrecognized chain id defaults to mainnet', () => {
-      expect(getBscScanLink(2, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
+      expect(getBscScanLink(2, 'abc', 'address')).toEqual('https://polygonscan.com/address/abc')
     })
     it('ropsten', () => {
-      expect(getBscScanLink(3, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
+      expect(getBscScanLink(3, 'abc', 'address')).toEqual('https://polygonscan.com/address/abc')
     })
     it('enum', () => {
-      expect(getBscScanLink(ChainId.RINKEBY, 'abc', 'address')).toEqual('https://bscscan.com/address/abc')
+      expect(getBscScanLink(ChainId.RINKEBY, 'abc', 'address')).toEqual('https://polygonscan.com/address/abc')
     })
   })
 

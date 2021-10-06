@@ -1,4 +1,4 @@
-import { Currency } from 'moonwalkerswap-sdk-v2'
+import { Currency } from 'polygon-moonwalkerswap-sdk'
 import React, { useCallback, useEffect, useState } from 'react'
 import useLast from '../../hooks/useLast'
 import { useSelectedListUrl } from '../../state/lists/hooks'

@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from 'moonwalkerswap-sdk-v2'
+import { Token, TokenAmount } from 'polygon-moonwalkerswap-sdk'
 import { useMemo } from 'react'
 import { useAllTokenBalances } from '../../state/wallet/hooks'
 

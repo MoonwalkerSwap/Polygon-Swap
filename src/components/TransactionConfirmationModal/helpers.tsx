@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
-import { Heading, IconButton, CloseIcon } from 'moonwalkerswap-uikit'
+import { Heading, IconButton, CloseIcon } from 'polygon-moonwalkerswap-uikit'
 import { AutoColumn, ColumnCenter } from '../Column'
 
 

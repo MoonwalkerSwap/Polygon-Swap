@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from 'moonwalkerswap-sdk-v2'
+import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from 'polygon-moonwalkerswap-sdk'
 import { computeTradePriceBreakdown } from './prices'
 
 describe('prices', () => {

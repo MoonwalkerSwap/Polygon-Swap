@@ -1,10 +1,10 @@
-import { ChainId } from 'moonwalkerswap-sdk-v2'
+import { ChainId } from 'polygon-moonwalkerswap-sdk'
 import React, { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
-import { Button, LinkExternal } from 'moonwalkerswap-uikit'
+import { Button, LinkExternal } from 'polygon-moonwalkerswap-uikit'
 import { ArrowUpCircle } from 'react-feather'
 import { AutoColumn } from '../Column'
-import { getBscScanLink } from '../../utils'
+import { getPolygonScanLink } from '../../utils'
 import { Wrapper, Section, ConfirmedIcon, ContentHeader } from './helpers'
 
 type TransactionSubmittedContentProps = {
@@ -25,7 +25,7 @@ const TransactionSubmittedContent = ({ onDismiss, chainId, hash }: TransactionSu
         </ConfirmedIcon>
         <AutoColumn gap="8px" justify="center">
           {chainId && hash && (
-            <LinkExternal href={getBscScanLink(chainId, hash, 'transaction')}>View on BscScan</LinkExternal>
+            <LinkExternal href={getPolygonScanLink(chainId, hash, 'transaction')}>View on PolygonScan</LinkExternal>
           )}
           <Button onClick={onDismiss} mt="20px">
             Close

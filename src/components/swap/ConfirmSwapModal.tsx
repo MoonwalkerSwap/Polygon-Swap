@@ -1,4 +1,4 @@
-import { currencyEquals, Trade } from 'moonwalkerswap-sdk-v2'
+import { currencyEquals, Trade } from 'polygon-moonwalkerswap-sdk'
 import React, { useCallback, useMemo } from 'react'
 import TransactionConfirmationModal, {
   ConfirmationModalContent,

@@ -1,6 +1,6 @@
-import { Trade, TradeType } from 'moonwalkerswap-sdk-v2'
+import { Trade, TradeType } from 'polygon-moonwalkerswap-sdk'
 import React, { useMemo, useState } from 'react'
-import { Text, Button } from 'moonwalkerswap-uikit'
+import { Text, Button } from 'polygon-moonwalkerswap-uikit'
 import { Repeat } from 'react-feather'
 
 import useI18n from 'hooks/useI18n'
@@ -104,7 +104,7 @@ export default function SwapModalFooter({
             <QuestionHelper
               text={TranslateString(
                 999,
-                'For each trade a 0.2% fee is paid. 0.17% goes to liquidity providers and 0.03% goes to the PancakeSwap treasury.'
+                'For each trade a 0.2% fee is paid. 0.17% goes to liquidity providers and 0.03% goes to the MoonwalkerSwap treasury.'
               )}
             />
           </RowFixed>

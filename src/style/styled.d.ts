@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-unresolved
-import { MoonWalkerTheme } from 'moonwalkerswap-uikit/dist/theme'
+import { MoonWalkerTheme } from 'polygon-moonwalkerswap-uikit/dist/theme'
 
 declare module 'styled-components' {
   /* eslint-disable @typescript-eslint/no-empty-interface */

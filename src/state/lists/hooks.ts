@@ -1,4 +1,4 @@
-import { ChainId, Token } from 'moonwalkerswap-sdk-v2'
+import { ChainId, Token } from 'polygon-moonwalkerswap-sdk'
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'

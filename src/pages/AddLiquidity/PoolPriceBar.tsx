@@ -1,6 +1,6 @@
 import React from 'react'
-import { Currency, Percent, Price } from 'moonwalkerswap-sdk-v2'
-import { Text } from 'moonwalkerswap-uikit'
+import { Currency, Percent, Price } from 'polygon-moonwalkerswap-sdk'
+import { Text } from 'polygon-moonwalkerswap-uikit'
 import { AutoColumn } from '../../components/Column'
 import { AutoRow } from '../../components/Row'
 import { ONE_BIPS } from '../../constants'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Modal } from 'moonwalkerswap-uikit'
+import { Modal } from 'polygon-moonwalkerswap-uikit'
 import SlippageToleranceSetting from './SlippageToleranceSetting'
 import TransactionDeadlineSetting from './TransactionDeadlineSetting'
 

@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from 'react'
 import styled from 'styled-components'
-import { Button, Text } from 'moonwalkerswap-uikit'
+import { Button, Text } from 'polygon-moonwalkerswap-uikit'
 import { AlertTriangle } from 'react-feather'
 import Modal from '../Modal'
 import { AutoRow, RowBetween } from '../Row'
@@ -39,17 +39,17 @@ export default function SyrupWarningModal({
         <AutoColumn gap="lg">
           <AutoRow gap="6px">
             <StyledWarningIcon />
-            <Text color="failure">Syrup Warning</Text>
+            <Text color="failure">PSpaceBar Warning</Text>
           </AutoRow>
           {transactionType !== '' && (
             <>
               <Text color="failure">
-                Please be careful when <strong>{transactionType}</strong> SYRUP.
+                Please be careful when <strong>{transactionType}</strong> PSpaceBar.
               </Text>
               <Text color="failure">
                 {transactionType === 'Buying'
-                  ? 'You will not receive CAKE rewards for holding purchased SYRUP.'
-                  : 'You will need to buy back the same amount of SYRUP to be able to convert back to CAKE.'}
+                  ? 'You will not receive pDUST rewards for holding purchased PSpaceBar.'
+                  : 'You will need to buy back the same amount of PSpaceBar to be able to convert back to pDust.'}
               </Text>
             </>
           )}

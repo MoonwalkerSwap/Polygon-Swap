@@ -1,4 +1,4 @@
-import { CurrencyAmount, ETHER, JSBI } from 'moonwalkerswap-sdk-v2'
+import { CurrencyAmount, ETHER, JSBI } from 'polygon-moonwalkerswap-sdk'
 import { MIN_ETH } from '../constants'
 
 /**

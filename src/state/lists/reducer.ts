@@ -127,7 +127,7 @@ export default createReducer(initialState, (builder) =>
         ...state.byUrl[url],
         pendingUpdate: null,
         current: state.byUrl[url].pendingUpdate,
-      }
+      } 
     })
     .addCase(updateVersion, (state) => {
       // state loaded from localStorage, but new lists have never been initialized

@@ -97,8 +97,8 @@ class MiniRpcProvider implements AsyncSendable {
         reject,
         request: { method },
       } = byKey[result.id]
-      if (resolve && reject) {
-
+      if (resolve) {
+        if (reject) {
         if ('error' in result) {
           reject(new RequestError(result?.error?.message, result?.error?.code, result?.error?.data))
         } else if ('result' in result) {
@@ -109,6 +109,7 @@ class MiniRpcProvider implements AsyncSendable {
       }
     }
   }
+}
 
   public readonly sendAsync = (
     request: { jsonrpc: '2.0'; id: number | string | null; method: string; params?: any },

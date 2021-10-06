@@ -1,4 +1,4 @@
-import { Token } from 'moonwalkerswap-sdk-v2'
+import { Token } from 'polygon-moonwalkerswap-sdk'
 import { isAddress } from '../../utils'
 
 export function filterTokens(tokens: Token[], search: string): Token[] {

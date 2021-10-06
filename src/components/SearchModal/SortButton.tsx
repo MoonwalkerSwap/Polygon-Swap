@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text } from 'moonwalkerswap-uikit'
+import { Text } from 'polygon-moonwalkerswap-uikit'
 import styled from 'styled-components'
 import { RowFixed } from '../Row'
 

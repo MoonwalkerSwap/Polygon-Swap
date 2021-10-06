@@ -1,6 +1,6 @@
-import { Currency, CurrencyAmount, Fraction, Percent } from 'moonwalkerswap-sdk-v2'
+import { Currency, CurrencyAmount, Fraction, Percent } from 'polygon-moonwalkerswap-sdk'
 import React from 'react'
-import { Button, Text } from 'moonwalkerswap-uikit'
+import { Button, Text } from 'polygon-moonwalkerswap-uikit'
 import { TranslateString } from 'utils/translateTextHelpers'
 import { RowBetween, RowFixed } from '../../components/Row'
 import CurrencyLogo from '../../components/CurrencyLogo'

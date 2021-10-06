@@ -1,6 +1,6 @@
 import React from 'react'
-import { Price } from 'moonwalkerswap-sdk-v2'
-import { SyncAltIcon, Text } from 'moonwalkerswap-uikit'
+import { Price } from 'polygon-moonwalkerswap-sdk'
+import { SyncAltIcon, Text } from 'polygon-moonwalkerswap-uikit'
 import { StyledBalanceMaxMini } from './styleds'
 
 interface TradePriceProps {

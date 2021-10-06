@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { kebabCase } from 'lodash'
-import { Toast, toastTypes } from 'moonwalkerswap-uikit'
+import { Toast, toastTypes } from 'polygon-moonwalkerswap-uikit'
 import { useDispatch } from 'react-redux'
 
 import {

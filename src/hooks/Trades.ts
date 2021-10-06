@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Pair, Token, Trade } from 'moonwalkerswap-sdk-v2'
+import { Currency, CurrencyAmount, Pair, Token, Trade } from 'polygon-moonwalkerswap-sdk'
 import flatMap from 'lodash.flatmap'
 import { useMemo } from 'react'
 

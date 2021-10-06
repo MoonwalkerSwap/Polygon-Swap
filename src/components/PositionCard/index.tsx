@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { JSBI, Pair, Percent } from 'moonwalkerswap-sdk-v2'
-import { Button, Card as UIKitCard, CardBody, Text } from 'moonwalkerswap-uikit'
+import { JSBI, Pair, Percent } from 'polygon-moonwalkerswap-sdk'
+import { Button, Card as UIKitCard, CardBody, Text } from 'polygon-moonwalkerswap-uikit'
 import { darken } from 'polished'
 import { ChevronDown, ChevronUp } from 'react-feather'
 import { Link } from 'react-router-dom'

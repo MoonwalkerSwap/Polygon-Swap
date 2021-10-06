@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Menu as UikitMenu} from 'moonwalkerswap-uikit'
+import { Menu as UikitMenu} from 'polygon-moonwalkerswap-uikit'
 import { useWeb3React } from '@web3-react/core'
 import { allLanguages } from 'constants/localisation/languageCodes'
 import { LanguageContext } from 'hooks/LanguageContext'
@@ -15,7 +15,7 @@ const Menu: React.FC = (props) => {
   const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
   const { isDark, toggleTheme } = useTheme()
   const priceData = useGetPriceData()
-  const dustPriceUsd = priceData ? Number(priceData.prices.Dust) : undefined
+  const pdustPriceUsd = priceData ? Number(priceData.prices.Pdust) : undefined
   const profile = useGetLocalProfile()
 
   return (
@@ -29,7 +29,7 @@ const Menu: React.FC = (props) => {
       currentLang={selectedLanguage?.code || ''}
       langs={allLanguages}
       setLang={setSelectedLanguage}
-      dustPriceUsd={dustPriceUsd}
+      pdustPriceUsd={pdustPriceUsd}
       profile={profile}
       {...props}
     />

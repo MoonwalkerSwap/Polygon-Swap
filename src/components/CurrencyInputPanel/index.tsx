@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
-import { Currency, Pair } from 'moonwalkerswap-sdk-v2'
-import { Button, ChevronDownIcon, Text } from 'moonwalkerswap-uikit'
+import { Currency, Pair } from 'polygon-moonwalkerswap-sdk'
+import { Button, ChevronDownIcon, Text } from 'polygon-moonwalkerswap-uikit'
 import styled from 'styled-components'
 import { darken } from 'polished'
 import useI18n from 'hooks/useI18n'

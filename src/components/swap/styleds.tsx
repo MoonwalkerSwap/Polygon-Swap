@@ -1,7 +1,7 @@
 import { transparentize } from 'polished'
 import React from 'react'
 import { AlertTriangle } from 'react-feather'
-import { Text } from 'moonwalkerswap-uikit'
+import { Text } from 'polygon-moonwalkerswap-uikit'
 import styled, { css } from 'styled-components'
 import { AutoColumn } from '../Column'
 
@@ -38,7 +38,7 @@ export const ErrorText = styled(Text)<{ severity?: 0 | 1 | 2 | 3 | 4 }>`
     severity === 3 || severity === 4
       ? theme.colors.failure
       : severity === 2
-      ? theme.colors.binance
+      ? theme.colors.polygon
       : severity === 1
       ? theme.colors.text
       : theme.colors.success};

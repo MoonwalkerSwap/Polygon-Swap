@@ -1,4 +1,4 @@
-import { Text } from 'moonwalkerswap-uikit'
+import { Text } from 'polygon-moonwalkerswap-uikit'
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`

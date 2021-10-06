@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Card } from 'moonwalkerswap-uikit'
+import { Card } from 'polygon-moonwalkerswap-uikit'
 
 export const BodyWrapper = styled(Card)`
   position: relative;

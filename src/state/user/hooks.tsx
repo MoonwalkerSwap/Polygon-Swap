@@ -1,4 +1,4 @@
-import { ChainId, Pair, Token } from 'moonwalkerswap-sdk-v2'
+import { ChainId, Pair, Token } from 'polygon-moonwalkerswap-sdk'
 import flatMap from 'lodash.flatmap'
 import { useCallback, useMemo } from 'react'
 import { shallowEqual, useDispatch, useSelector } from 'react-redux'

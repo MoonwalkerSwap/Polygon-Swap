@@ -1,4 +1,4 @@
-import { Percent } from 'moonwalkerswap-sdk-v2'
+import { Percent } from 'polygon-moonwalkerswap-sdk'
 import React from 'react'
 import { ONE_BIPS } from '../../constants'
 import { warningSeverity } from '../../utils/prices'

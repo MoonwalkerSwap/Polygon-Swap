@@ -1,4 +1,4 @@
-import { Currency } from 'moonwalkerswap-sdk-v2'
+import { Currency } from 'polygon-moonwalkerswap-sdk'
 import React from 'react'
 import styled from 'styled-components'
 import CurrencyLogo from '../CurrencyLogo'

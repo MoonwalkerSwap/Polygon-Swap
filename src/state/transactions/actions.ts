@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit'
-import { ChainId } from 'moonwalkerswap-sdk-v2'
+import { ChainId } from 'polygon-moonwalkerswap-sdk'
 
 export interface SerializableTransactionReceipt {
   to: string

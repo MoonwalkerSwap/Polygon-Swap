@@ -1,7 +1,7 @@
-# Contributing to the MoonWalkerSwap ecosystem 🚀
+# Contributing to the Polygon MoonWalkerSwap ecosystem 🚀
 
 Thanks for taking the time to contribute !
-You can start by reading our [Contribution guidelines](https://docs.moonwalker.network/code/contributing) first.
+You can start by reading our [Contribution guidelines](https://polygon-docs.moonwalker.network/code/contributing) first.
 
 ## Setup
 
@@ -14,12 +14,11 @@ yarn start
 
 Don't forget to setup your IDE with `eslint` and `prettier`.
 
-## Change BSC network
+## Change to Polygon network
 
-To change the BSC network from test net, modify the `REACT_APP_CHAIN_ID` value in `.env`.
+To change the Polygon network from test net, modify the `REACT_APP_CHAIN_ID` value in `.env`.
 
-- MAIN NET `56`
-- TEST NET `97`
+- MAIN NET `137`
 
 ## Tests
 
